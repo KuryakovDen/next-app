@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Notification Feed - Тестовое задание (Next.js)
 
-## Getting Started
+## 🚀 Быстрый старт
 
-First, run the development server:
+1. Установите зависимости:
+
+```bash
+npm install
+```
+
+2. Запустите dev-сервер:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Откройте [http://localhost:3000](http://localhost:3000) в браузере
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Структура проекта
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/src/
+├── app/                  # Next.js App Router
+│   ├── (main)/           # Основной layout
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│
+├── features/             # Фичи приложения (FSD)
+│   ├── notifications/    # Фича уведомлений
+│   │   ├── components/   # Компоненты фичи
+│   │   ├── types/        # Типы фичи
+│   └── theme-toggle/     # Фича переключения темы
+│
+├── entities/             # Бизнес-сущности
+│   ├── notification/     # Сущность уведомления
+│   └── user/            # Сущность пользователя
+│
+├── shared/              # Общие ресурсы
+│   ├── ui/              # UI-кит (компоненты дизайн-системы)
+│   │   ├── Avatar/
+│   │   ├── Button/
+│   │   └── ... 
+│   └── styles/          # Глобальные стили, темы
+```
 
-## Learn More
+## 🛠 Ключевые особенности
 
-To learn more about Next.js, take a look at the following resources:
+### Компонентный подход
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Четкое разделение на UI-компоненты (Button, Avatar) и бизнес-компоненты
+- Переиспользуемые модули с продуманными пропсами
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Стилизация
 
-## Deploy on Vercel
+- CSS Modules для изоляции стилей
+- CSS-переменные для темизации
+- Адаптивный дизайн (mobile/desktop)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌈 Темная тема
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Переключатель в правом верхнем углу
+- Автоматически определяет системные настройки
+- Сохраняет выбор пользователя в localStorage
+
+## 📱 Адаптивность
+
+Оптимизировано для:
+
+- Мобильных устройств (от 320px)
+- Планшетов
+- Десктопных экранов
+
+## 🔮 Демо
+
+[Ссылка на Vercel](#) (заменить на реальную после деплоя)

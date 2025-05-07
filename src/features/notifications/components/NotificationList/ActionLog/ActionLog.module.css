@@ -1,0 +1,35 @@
+.actionLog {
+  background: var(--background-secondary);
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.actionLog h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.actionLog ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.actionLog li {
+  margin-bottom: 6px;
+  word-break: break-word;
+  color: var(--text-secondary);
+}
+
+.emptyMessage {
+  color: var(--text-tertiary);
+  font-style: italic;
+  margin: 0;
+}

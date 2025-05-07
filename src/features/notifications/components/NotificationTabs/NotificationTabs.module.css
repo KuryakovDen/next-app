@@ -1,0 +1,46 @@
+.tabsContainer {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.tab {
+  flex: 1; /* Равномерное распределение пространства */
+  padding: 12px 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: var(--background-card-hover);
+}
+
+.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .tab {
+    padding: 10px 4px;
+    font-size: 0.875rem;
+  }
+}

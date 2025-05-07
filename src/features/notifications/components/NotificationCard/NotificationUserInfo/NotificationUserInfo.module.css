@@ -1,0 +1,76 @@
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+}
+
+.userText {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.nameWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.userName {
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userUsername {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userNameWrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.maleIcon {
+  color: var(--male-color);
+  font-size: 0.875rem;
+}
+
+.femaleIcon {
+  color: var(--female-color);
+  font-size: 0.875rem;
+}
+
+.verifiedIcon {
+  color: white;
+  font-size: 0.75rem;
+  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--verify-color);
+  border: 1px solid white;
+}
+
+@media (max-width: 767px) {
+  .userText {
+    max-width: 120px;
+  }
+
+  .genderIcon {
+    width: 10px;
+    height: 10px;
+  }
+}

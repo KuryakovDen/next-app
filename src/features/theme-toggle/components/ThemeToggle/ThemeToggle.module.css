@@ -1,0 +1,24 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.toggleContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .themeToggle {
+    padding: 6px 10px;
+    font-size: 0.875rem;
+  }
+}
