@@ -15,8 +15,10 @@ export const mockNotifications: Notification[] = [
     type: 'like',
     time: '2023-05-15T10:30:00Z',
     isSubscribed: false,
-    postUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=100&q=80',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80',
+    postUrl:
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=100&q=80',
+    image:
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80',
   },
   {
     id: '2',
@@ -32,8 +34,10 @@ export const mockNotifications: Notification[] = [
     type: 'comment',
     time: '2023-05-15T09:15:00Z',
     isSubscribed: true,
-    postUrl: 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=100&w=100',
-    image: 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=300&w=400',
+    postUrl:
+      'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=100&w=100',
+    image:
+      'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=300&w=400',
   },
   {
     id: '3',
@@ -49,7 +53,8 @@ export const mockNotifications: Notification[] = [
     type: 'mention',
     time: '2023-05-15T07:45:00Z',
     isSubscribed: false,
-    postUrl: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=100&q=80',
+    postUrl:
+      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=100&q=80',
   },
   {
     id: '4',
@@ -80,8 +85,10 @@ export const mockNotifications: Notification[] = [
     type: 'like',
     time: '2023-05-14T15:30:00Z',
     isSubscribed: true,
-    postUrl: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=100&q=80',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80',
+    postUrl:
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=100&q=80',
+    image:
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80',
   },
   {
     id: '6',
@@ -97,8 +104,10 @@ export const mockNotifications: Notification[] = [
     type: 'comment',
     time: '2023-05-14T14:00:00Z',
     isSubscribed: false,
-    postUrl: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=100&q=80',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80',
+    postUrl:
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=100&q=80',
+    image:
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80',
   },
   {
     id: '7',
@@ -129,7 +138,8 @@ export const mockNotifications: Notification[] = [
     type: 'mention',
     time: '2023-05-14T12:00:00Z',
     isSubscribed: false,
-    postUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=100&q=80',
+    postUrl:
+      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=100&q=80',
   },
   {
     id: '9',
@@ -145,7 +155,9 @@ export const mockNotifications: Notification[] = [
     type: 'like',
     time: '2023-05-14T11:45:00Z',
     isSubscribed: false,
-    postUrl: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=100&q=80',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80',
-  }
+    postUrl:
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=100&q=80',
+    image:
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80',
+  },
 ];

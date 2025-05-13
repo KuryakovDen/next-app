@@ -16,12 +16,12 @@ interface NotificationContentProps {
 const MOBILE_TEXT_MAX_LENGTH = 50;
 
 export const NotificationContent = memo(function NotificationContent({
-                                                                       notification,
-                                                                       isMobile,
-                                                                       viewport,
-                                                                       initialSubscribed = false,
-                                                                       onSubscribeChange,
-                                                                     }: NotificationContentProps) {
+  notification,
+  isMobile,
+  viewport,
+  initialSubscribed = false,
+  onSubscribeChange,
+}: NotificationContentProps) {
   const [isSubscribed, setIsSubscribed] = useState(initialSubscribed);
 
   const displayText = useMemo(() => {
@@ -39,7 +39,10 @@ export const NotificationContent = memo(function NotificationContent({
 
   const notificationText = useFormattedText(displayText, MOBILE_TEXT_MAX_LENGTH, isMobile);
 
-  const subscribeButtonSize = useMemo(() => (viewport === 'tablet' ? 'small' : 'medium'), [viewport]);
+  const subscribeButtonSize = useMemo(
+    () => (viewport === 'tablet' ? 'small' : 'medium'),
+    [viewport],
+  );
 
   const subscribeText = useMemo(() => (isSubscribed ? 'Подписан' : 'Подписаться'), [isSubscribed]);
 

@@ -30,3 +30,5 @@ export interface PostNotification extends BaseNotification {
 }
 
 export type Notification = SubscribedNotification | PostNotification;
+
+export type TabType = 'all' | 'interactions' | 'mentions';
